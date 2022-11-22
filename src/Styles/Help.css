@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Rubik:wght@300&display=swap');
+body{
+   font-family: 'Crimson Text', serif;
+   font-family: 'Rubik', sans-serif;
+}
+
+.hContainer{
+        max-width: 1140px;
+        margin: auto;
+        margin-top: 27px;
+        /* background-color: #F8F8F8; */
+}
+
+.help{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    padding-bottom: 40px;
+    margin-top: -20px;
+}
+
+.help-left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 60px;
+}
+.Lg{
+    width: 100px;
+    height: 50px;
+}
+
+.Sig{
+    margin: 0 7px;
+}
+
+.left-text{
+    font-size: 12px;
+    color: #4F5665;
+}
+
+.help-right{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    text-align: center;
+    line-height: 30px;
+}
+
+.right1-title{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+ /* Styling for responsive design */
+
+@media(max-width:1024px){
+    .hContainer{
+        max-width: 940px;
+        margin-top: 20px;
+    } 
+}
+@media(max-width:768px){
+    .hContainer{
+        max-width: 500px;
+        margin-top: 15px;
+    }
+    .help{
+        grid-template-columns: repeat(2,0.7fr);
+        justify-content: center;
+    }
+
+}
+@media(max-width:568px){
+    .hContainer{
+        max-width: 350px;
+        margin-top: 10px;
+    }
+
+    .help{
+        gap: 20px;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+}

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Rubik:wght@300&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+body{
+   font-family: 'Crimson Text', serif;
+   font-family: 'Rubik', sans-serif;
+}
+
+.reviewSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 40px 20px;
+    justify-content: center;
+    gap: 10px;
+}
+.Testimonials-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+   color: #0B132A ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+  
+}
+.text{
+    font-size: 15px;
+    color: #4F5665;
+    margin: 15px 0;
+    line-height: 25px;
+    flex-direction: column;
+   align-self: center;
+   justify-content: center;
+}
+.textP2{
+   align-self: center;
+}
+
+.personPic{
+    height: 30px;
+    width: 30px;
+}
+
+.reviews{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.person,.person3{
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+   position: absolute;
+   right: 100px;
+}
+.person3{
+    right: 80px;
+}
+.pName{
+    font-weight: bold;
+    color: #0B132A;
+}
+.pLocation{
+    color: #4F5665;
+}
+.rating{
+    position: absolute;
+    right: 10px;
+}
+
+.reviewCard1,.reviewCard2,.reviewCard3{
+    width: 250px;
+    height: 140px;
+    border: 1px solid #F53838;
+    border-radius: 8px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.reviewCard2,.reviewCard3{
+    border: 1px solid #DDDDDD;
+}
+.pr{
+    font-weight: 400;
+   
+}
+
+.controler{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.left{
+    display: flex;
+    gap: 15px;
+}
+
+.l1{
+    height: 10px;
+    width: 30px;
+    background-color: #F53838;
+    border-radius: 10px;
+}
+
+.l2,.l3,.l4{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #DDE0E4;
+}
+
+.right{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.r1,.r2{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.r1{
+    background-color: #FFFFFF;
+    color: #F53838;
+    border: 1px solid #F53838;
+}
+
+.r2{
+    background-color: #F53838;
+}
+.bi-arrow-right{
+    color:#FFFFFF;
+}
+
+.btn4{
+    color: white;
+    background-color: #F53855;
+    align-self: start;
+    padding: 10px 40px;
+    border-radius: 5px;
+    justify-self: center;
+}
+
+.lastSection{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    margin: 80px 50px;
+    box-shadow: 0 0 12px -5px rgba(0,0,0,0.25);
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:60px;
+    text-align: center;
+}
+
+.title2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #0B132A;
+}
+
+.text2{
+    font-size: 12px;
+    color:#4F5665;
+    margin-top: 7px;
+
+}
+.last-text{
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+
+ /* Styling for responsive design */
+
+@media(max-width:1024px){
+    .lastSection{
+        grid-template-columns: repeat(2,0.7fr);
+        justify-content: center;
+    }
+    .reviewSection{
+        grid-template-columns: repeat(2,1fr);
+        margin: 35px 18px;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .controler{
+        grid-template-columns: repeat(2,0.7fr);
+        justify-items: center;
+        gap: 20px;
+    }
+}
+@media(max-width:768px){
+    .lastSection{
+        grid-template-columns: repeat(1,0.7fr);
+        justify-content: center;
+    }
+    .reviewSection{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 30px 15px;
+        gap: 10px;
+        justify-content: center;
+    }
+    .controler{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+
+}
+@media(max-width:568px){
+    .lastSection{
+        grid-template-columns: repeat(1,0.7fr);
+        justify-content: center;
+       
+    }
+    .reviewSection{
+        display: grid;
+        grid-template-columns: repeat(1,0.7fr);
+        margin: 20px 10px;
+        gap: 10px;
+        justify-content: center;
+    }
+    .controler{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+}

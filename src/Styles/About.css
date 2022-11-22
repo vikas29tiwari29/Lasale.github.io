@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Rubik:wght@300&display=swap');
+body{
+   font-family: 'Crimson Text', serif;
+   font-family: 'Rubik', sans-serif;
+   overflow-x: hidden;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 40px 30px;
+    align-items: center;
+    margin-top:-80px ;
+    gap: 100px;
+  
+ }
+ .section-2{
+    justify-items: center;
+ }
+ .flex{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+ }
+ 
+ .section-2__left{
+    height: 400px;
+    width: 400px;
+ }
+ .section-2__right{
+    height: 300px;
+    /* width: 400px; */
+    margin-bottom: 150px;
+ }
+ 
+ .section-2--title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    color: #0B132A;
+ }
+ .section-2--text{
+    font-size: 15px;
+    color: #4F5665;
+ }
+ .section-2--btn{
+    color: white;
+    background-color: #F53855;
+    align-self: start;
+    padding: 10px 40px;
+    border-radius: 5px;
+ }
+
+ .profile{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    color: #0B132A;
+    position: relative;
+    bottom: 120px;
+    box-shadow:  3px 4px 12px 1px rgba(0,0,0,0.25);
+   background: #EEEFF2;
+ }
+ .item{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+ }
+ 
+ .Ig{
+    height: 30px;
+    width: 30px;
+    background-color: #FFECEC;
+    border-radius: 100%;
+ }
+
+ .num{
+    font-weight: 700;
+    font-size: 20px;
+ }
+
+ /* Styling for responsive design */
+
+ @media (max-width:1200px){
+    .container{
+        max-width: 970px;
+    }
+ }
+ @media (max-width:1024px){
+    .container{
+        max-width: 740px;
+    }
+    .profile{
+      grid-template-columns: repeat(3,1fr);
+      width: 100%; 
+   }
+ }
+ @media (max-width:768px){
+ 
+    .grid{
+       grid-template-columns: repeat(1,1fr);
+       max-width: 100%;
+       margin-top:-30px ;
+       gap: 20;
+       align-content: center;
+    }
+    .profile{
+        grid-template-columns: repeat(2,1fr); 
+        width: 100%;
+     }
+    .section-2__left{
+       height: 150px;
+      
+    }
+    /* .container{
+        max-width: 500px;
+        margin: auto;
+    } */
+ 
+ }
+ @media (max-width:568px){
+    .container{
+        max-width:90%;
+    }
+    .profile{
+        grid-template-columns: repeat(1,1fr); 
+     }
+     .item{
+        margin: 10px;
+     }
+ }
+
+
+
+ .aboutContainer{
+    max-width: 940px;
+    margin:0 auto;
+ }
+
+ 
